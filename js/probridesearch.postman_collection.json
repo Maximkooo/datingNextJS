@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "2cd6274b-0a70-489a-babe-f58ba44be875",
+		"name": "probridesearch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "getUsersByFilters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev_url}}/api/v1/users?size=10&page=0&maxWeight=100&minWeight=20&minHeight=150&maxHeight=200&name=yur&cityId=1&purposeId=6&hobbyIds=10,8,9&minAge=19&maxAge=72",
+							"host": [
+								"{{dev_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "maxWeight",
+									"value": "100"
+								},
+								{
+									"key": "minWeight",
+									"value": "20"
+								},
+								{
+									"key": "minHeight",
+									"value": "150"
+								},
+								{
+									"key": "maxHeight",
+									"value": "200"
+								},
+								{
+									"key": "name",
+									"value": "yur"
+								},
+								{
+									"key": "cityId",
+									"value": "1"
+								},
+								{
+									"key": "purposeId",
+									"value": "6"
+								},
+								{
+									"key": "hobbyIds",
+									"value": "10,8,9"
+								},
+								{
+									"key": "minAge",
+									"value": "19"
+								},
+								{
+									"key": "maxAge",
+									"value": "72"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{dev_url}}/api/v1/users/1",
+							"host": [
+								"{{dev_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get photo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.professionalbridesearch.com/api/v1/pictures/1/young-and-beautiful-woman-in-pink-warm-sweater-natural-look-smiling-portrait-on-isolated-long-hair_285396-896.jpeg",
+					"protocol": "https",
+					"host": [
+						"api",
+						"professionalbridesearch",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"pictures",
+						"1",
+						"young-and-beautiful-woman-in-pink-warm-sweater-natural-look-smiling-portrait-on-isolated-long-hair_285396-896.jpeg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

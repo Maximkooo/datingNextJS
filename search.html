@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display%7COpen+Sans:400,600">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="loader">
+        <div class="ball one">
+          <div class="inner"></div>
+        </div>
+        <div class="ball two">
+          <div class="inner"></div>
+        </div>
+        <div class="ball three">
+          <div class="inner"></div>
+        </div>
+        <div class="ball four">
+          <div class="inner"></div>
+        </div>
+        <div class="ball five">
+          <div class="inner"></div>
+        </div>
+        <div class="ball six">
+          <div class="inner"></div>
+        </div>
+        <div class="ball center">
+          <div class="inner"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page page-search">
+      <!-- Page Header-->
+      <header class="section page-header page-header-1 context-dark">
+        <div class="page-header-2-figure" style="background: linear-gradient(180deg, #330033 0%, #4E004D 100%);"></div>
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-modern" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+            data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+            data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                    <a class="brand" href="index.html">
+                      <img class="brand-logo-dark" src="images/main/dark-logo.svg" alt="" width="118" height="60" />
+                      <img class="brand-logo-light" src="images/main/logo.svg" alt="" width="118" height="60" />
+                    </a>
+                  </div>
+                </div>
+                <div class="rd-navbar-nav-wrap">
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="search.html">Search</a>
+                    </li>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="mailto:probridesearch@gmail.com">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="section section-sm-20">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-lg-3">
+              <!-- Filter -->
+              <div class="filters-girl disp">
+                <div class="head-filters-wrapper">
+                  <h6 id="name-filters">Filters</h6>
+                  <div class="filters-girl-btn-reset">
+                    <button class="btn-reset"><img src="./images/trash-2.svg" class="icon-trash">Reset</button>  
+                  </div>
+                </div>
+                <p class="name-of-filters">Age</p>
+                <div class="filters-wrapper">
+                  <input type="text" size="3" placeholder="21" class="filter-sm"> 
+                  <h6 style="text-align: center; opacity: 0.5; margin-top: 7px;">-</h6>
+                  <input type="text" size="3" placeholder="60" class="filter-sm">  
+                </div>
+                <p class="name-of-filters">Location</p>
+                <div class="filter-drop-down filter-big">
+									<select>
+										<option>All</option>
+										<option>Kyiv</option>
+										<option>Kharkiv</option>
+										<option>Odesa</option>
+                    <option>Dnipro</option>
+                    <option>Zaporizhzhia</option>
+                    <option>Kryvyi Rih</option>
+                    <option>Mykolaiv</option>
+                    <option>Vinnytsia</option>
+									</select>
+								</div>
+                <p class="name-of-filters">Height</p>
+                <div class="filters-wrapper">
+                  <input type="text" size="3" placeholder="160" class="filter-sm"> 
+                  <h6 style="text-align: center; opacity: 0.5; margin-top: 7px;">-</h6>
+                  <input type="text" size="3" placeholder="190" class="filter-sm">  
+                </div>
+                <p class="name-of-filters">Weight, kg</p>
+                <div class="filters-wrapper">
+                  <input type="text" size="3" placeholder="40" class="filter-sm"> 
+                  <h6 style="text-align: center; opacity: 0.5; margin-top: 7px;">-</h6>
+                  <input type="text" size="3" placeholder="80" class="filter-sm">  
+                </div>
+                <p class="name-of-filters">Purpose</p>
+                <div class="filter-drop-down filter-big">
+									<select>
+										<option>All</option>
+										<option>Marriage</option>
+										<option>Dating</option>
+										<option>Friendship</option>
+									</select>
+								</div>
+                <div class="filters-girl-btn-search">
+                  <button class="btn-search"><img src="./images/search_icon.svg" class="icon-trash">Find your partner</button>  
+                </div>
+              </div>
+            </div>
+            <div class="offset-lg-1 col-md-8">
+              <div class="row">
+                <div class="col-8 col-md-12 search-wrapper">
+                  <p class="search-result">Search results</p>
+                  <div class="block-search-number">
+                    <p class="search-number">95 girls<h6 class="search-matching"> matching your search</h6></p>
+                  </div>
+                </div>
+                <div class="col-4 filter-for-search text-right">
+                  <div class="but-filter" onclick="openNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                </div>
+              </div>
+                <!-- Post Classic-->
+              <div class="row mt-10" id="block_girl">
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-20">
+                  <a href="profile.html" class="link-post-classic">
+                    <div class="row">
+                      <div class="col-6 col-md-12 pad-r-0">
+                        <article class="post-classic post-classic-figure">
+                          <img class="post-classic-image" src="images/main/user-1.png" alt="" width="339" height="251"/>
+                        </article>
+                      </div>
+                      <div class="col-6 col-md-12 post-wrapper">
+                        <div class="post-classic-options-first">
+                          <div class="w-50">
+                            <p class="post-classic-height">Height</p>
+                            <p class="post-classic-height-value">170 cm</p>
+                          </div>
+                          <div class="w-50">
+                            <p class="post-classic-weight">Weight</p>
+                            <p class="post-classic-weight-value">61 kg</p>
+                          </div>
+                        </div>
+                        <div class="post-classic-options-second">
+                          <div class="post-classic-options-second-width">
+                            <p class="post-classic-name">Szilvia</p>
+                            <p class="post-classic-age blank-age">19</p>
+                          </div>
+                          <div class="post-classic-options-second-age">
+                            <p class="post-classic-age">19</p>
+                          </div>
+                        </div>
+                        <div class="post-classic-options-therd">
+                            <p class="post-classic-location">Kiev, Ukraine</p>
+                            <p class="post-classic-description">I am an adult but cheerful woman with a view of life ...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Post Classic-->
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-20">
+                  <a href="profile.html" class="link-post-classic">
+                    <div class="row">
+                      <div class="col-6 col-md-12 pad-r-0">
+                        <article class="post-classic post-classic-figure"><img class="post-classic-image" src="images/main/user-1.png" alt="" width="339" height="251"/></article>
+                      </div>
+                      <div class="col-6 col-md-12 post-wrapper">
+                        <div class="post-classic-options-first">
+                          <div class="w-50">
+                            <p class="post-classic-height">Height</p>
+                            <p class="post-classic-height-value">170 cm</p>
+                          </div>
+                          <div class="w-50">
+                            <p class="post-classic-weight">Weight</p>
+                            <p class="post-classic-weight-value">61 kg</p>
+                          </div>
+                        </div>
+                        <div class="post-classic-options-second">
+                          <div class="post-classic-options-second-width">
+                            <p class="post-classic-name">Szilvia</p>
+                            <p class="post-classic-age blank-age">19</p>
+                          </div>
+                          <div class="post-classic-options-second-age">
+                            <p class="post-classic-age">19</p>
+                          </div>
+                        </div>
+                        <div class="post-classic-options-therd">
+                            <p class="post-classic-location">Kiev, Ukraine</p>
+                            <p class="post-classic-description">I am an adult but cheerful woman with a view of life ...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Post Classic-->
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-20">
+                  <a href="profile.html" class="link-post-classic">
+                    <div class="row">
+                      <div class="col-6 col-md-12 pad-r-0">
+                        <article class="post-classic post-classic-figure"><img class="post-classic-image" src="images/main/user-1.png" alt="" width="339" height="251"/></article>
+                      </div>
+                      <div class="col-6 col-md-12 post-wrapper">
+                        <div class="post-classic-options-first">
+                          <div class="w-50">
+                            <p class="post-classic-height">Height</p>
+                            <p class="post-classic-height-value">170 cm</p>
+                          </div>
+                          <div class="w-50">
+                            <p class="post-classic-weight">Weight</p>
+                            <p class="post-classic-weight-value">61 kg</p>
+                          </div>
+                        </div>
+                        <div class="post-classic-options-second">
+                          <div class="post-classic-options-second-width">
+                            <p class="post-classic-name">Szilvia</p>
+                            <p class="post-classic-age blank-age">19</p>
+                          </div>
+                          <div class="post-classic-options-second-age">
+                            <p class="post-classic-age">19</p>
+                          </div>
+                        </div>
+                        <div class="post-classic-options-therd">
+                            <p class="post-classic-location">Kiev, Ukraine</p>
+                            <p class="post-classic-description">I am an adult but cheerful woman with a view of life ...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Post Classic-->
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-20">
+                  <a href="profile.html" class="link-post-classic">
+                    <div class="row">
+                      <div class="col-6 col-md-12 pad-r-0">
+                        <article class="post-classic post-classic-figure"><img class="post-classic-image" src="images/main/user-1.png" alt="" width="339" height="251"/></article>
+                      </div>
+                      <div class="col-6 col-md-12 post-wrapper">
+                        <div class="post-classic-options-first">
+                          <div class="w-50">
+                            <p class="post-classic-height">Height</p>
+                            <p class="post-classic-height-value">170 cm</p>
+                          </div>
+                          <div class="w-50">
+                            <p class="post-classic-weight">Weight</p>
+                            <p class="post-classic-weight-value">61 kg</p>
+                          </div>
+                        </div>
+                        <div class="post-classic-options-second">
+                          <div class="post-classic-options-second-width">
+                            <p class="post-classic-name">Szilvia</p>
+                            <p class="post-classic-age blank-age">19</p>
+                          </div>
+                          <div class="post-classic-options-second-age">
+                            <p class="post-classic-age">19</p>
+                          </div>
+                        </div>
+                        <div class="post-classic-options-therd">
+                            <p class="post-classic-location">Kiev, Ukraine</p>
+                            <p class="post-classic-description">I am an adult but cheerful woman with a view of life ...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Post Classic-->
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-20">
+                  <a href="profile.html" class="link-post-classic">
+                    <div class="row">
+                      <div class="col-6 col-md-12 pad-r-0">
+                        <article class="post-classic post-classic-figure"><img class="post-classic-image" src="images/main/user-1.png" alt="" width="339" height="251"/></article>
+                      </div>
+                      <div class="col-6 col-md-12 post-wrapper">
+                        <div class="post-classic-options-first">
+                          <div class="w-50">
+                            <p class="post-classic-height">Height</p>
+                            <p class="post-classic-height-value">170 cm</p>
+                          </div>
+                          <div class="w-50">
+                            <p class="post-classic-weight">Weight</p>
+                            <p class="post-classic-weight-value">61 kg</p>
+                          </div>
+                        </div>
+                        <div class="post-classic-options-second">
+                          <div class="post-classic-options-second-width">
+                            <p class="post-classic-name">Szilvia</p>
+                            <p class="post-classic-age blank-age">19</p>
+                          </div>
+                          <div class="post-classic-options-second-age">
+                            <p class="post-classic-age">19</p>
+                          </div>
+                        </div>
+                        <div class="post-classic-options-therd">
+                            <p class="post-classic-location">Kiev, Ukraine</p>
+                            <p class="post-classic-description">I am an adult but cheerful woman with a view of life ...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Post Classic-->
+                <div class="col-sm-12 col-md-4 col-lg-3 mt-20">
+                  <a href="profile.html" class="link-post-classic">
+                    <div class="row">
+                      <div class="col-6 col-md-12 pad-r-0">
+                        <article class="post-classic post-classic-figure"><img class="post-classic-image" src="images/main/user-1.png" alt="" width="339" height="251"/></article>
+                      </div>
+                      <div class="col-6 col-md-12 post-wrapper">
+                        <div class="post-classic-options-first">
+                          <div class="w-50">
+                            <p class="post-classic-height">Height</p>
+                            <p class="post-classic-height-value">170 cm</p>
+                          </div>
+                          <div class="w-50">
+                            <p class="post-classic-weight">Weight</p>
+                            <p class="post-classic-weight-value">61 kg</p>
+                          </div>
+                        </div>
+                        <div class="post-classic-options-second">
+                          <div class="post-classic-options-second-width">
+                            <p class="post-classic-name">Szilvia</p>
+                            <p class="post-classic-age blank-age">19</p>
+                          </div>
+                          <div class="post-classic-options-second-age">
+                            <p class="post-classic-age">19</p>
+                          </div>
+                        </div>
+                        <div class="post-classic-options-therd">
+                            <p class="post-classic-location">Kiev, Ukraine</p>
+                            <p class="post-classic-description">I am an adult but cheerful woman with a view of life ...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                
+                
+                
+                <div class="col-12">
+                  <nav class="pagination-outer text-center">
+                    <ul class="pagination">
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Side filter background -->
+      <div class="sidefon" id="mySidenavFon" onclick="closeNav()"></div>
+      
+      <div id="mySidenav" class="sidenav">
+        <div class="filters-girl">
+          <div class="head-filters-wrapper">
+            <h6 id="name-filters">Filters</h6>
+            <div class="filters-girl-btn-reset">
+              <button class="btn-reset"><img src="./images/trash-2.svg" class="icon-trash">Reset</button>  
+            </div>
+          </div>
+          <p class="name-of-filters">Age</p>
+          <div class="filters-wrapper">
+            <input type="text" size="3" placeholder="21" class="filter-sm"> 
+            <h6 style="text-align: center; opacity: 0.5; margin-top: 7px;">-</h6>
+            <input type="text" size="3" placeholder="60" class="filter-sm">  
+          </div>
+          <p class="name-of-filters">Location</p>
+          <div class="filter-drop-down filter-big">
+            <select>
+              <option>All</option>
+              <option>Kyiv</option>
+              <option>Kharkiv</option>
+              <option>Odesa</option>
+              <option>Dnipro</option>
+              <option>Zaporizhzhia</option>
+              <option>Kryvyi Rih</option>
+              <option>Mykolaiv</option>
+              <option>Vinnytsia</option>
+            </select>
+          </div>
+          <p class="name-of-filters">Height</p>
+          <div class="filters-wrapper">
+            <input type="text" size="3" placeholder="160" class="filter-sm"> 
+            <h6 style="text-align: center; opacity: 0.5; margin-top: 7px;">-</h6>
+            <input type="text" size="3" placeholder="190" class="filter-sm">  
+          </div>
+          <p class="name-of-filters">Weight, kg</p>
+          <div class="filters-wrapper">
+            <input type="text" size="3" placeholder="40" class="filter-sm"> 
+            <h6 style="text-align: center; opacity: 0.5; margin-top: 7px;">-</h6>
+            <input type="text" size="3" placeholder="80" class="filter-sm">  
+          </div>
+          <p class="name-of-filters">Purpose</p>
+          <div class="filter-drop-down filter-big">
+            <select>
+              <option>All</option>
+              <option>Marriage</option>
+              <option>Dating</option>
+              <option>Friendship</option>
+            </select>
+          </div>
+          <div class="filters-girl-btn-search">
+            <button class="btn-search"><img src="./images/search_icon.svg" class="icon-trash">Find your partner</button>  
+          </div>
+        </div>
+      </div>
+      
+    
+      <!-- Page Footer-->
+      <footer class="section footer-modern">
+        <div class="footer-modern-main">
+          <div class="container">
+            <div class="row row-30 justify-content-lg-between">
+              <div class="col-sm-5 col-md-3 col-lg-3">
+                <h3 class="footer-modern-title">Navigation</h3>
+                <div class="footer-modern-item-block">
+                  <ul class="list list-1">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="mailto:probridesearch@gmail.com">Contacts</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-7 col-md-5 col-lg-4">
+                
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <h3 class="footer-modern-title">Contacts & Support</h3>
+                <div class="footer-modern-item-block">
+                  <ul class="list list-1">
+                    <li><a href="mailto:probridesearch@gmail.com">Get in Touch</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-modern-aside">
+          <div class="container">
+            <div class="row row-30">
+              <div
+                class="col-12 d-flex flex-column align-items-lg-start justify-content-center align-items-center order-1">
+                <p class="rights"><span>&copy;&nbsp; </span><span
+                  class="copyright-year"></span><span>&nbsp;</span><span>Professional Bride Search</span><span>. All
+                  rights reserved.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <script src="js/block_girl.js"></script>
+  </body>
+</html>
